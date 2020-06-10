@@ -1,0 +1,5 @@
+co\currere\dao\NumberGuessDaoImpl.class
+co\currere\dao\NumberGuessDao.class
+co\currere\domain\Win.class
+co\currere\NumberGuessApplication.class
+co\currere\service\NumberGuessService.class
