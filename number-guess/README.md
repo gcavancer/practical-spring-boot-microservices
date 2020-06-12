@@ -7,13 +7,13 @@ Original JAX-RS project with annotation configuration, from the Currere [article
 Clone example:
 
 ```bash
-git clone https://github.com/gcavancer/practical-spring-boot-microservices
-cd number-guess
+$ git clone https://github.com/gcavancer/practical-spring-boot-microservices
+$ cd number-guess
 ```
 Generate WAR to /target/number-guess-service.war:
 
 ```bash
-mvn package
+$ mvn package
 ```
 ## Run
 
