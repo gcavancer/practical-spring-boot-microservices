@@ -2,6 +2,10 @@
 
 Rethinking the Spring Boot game, from the Currere [article](https://currere.co/knowledge/practical-spring-boot-microservices-1-refactoring-to-spring-boot).
 
+Refactored starter, with tests. Does not use client.
+
+Now generates a Game server-side, with original and average of games (can provide value; range etc).
+
 ## Setup
 
 Clone example:
