@@ -18,7 +18,6 @@ public class GameServiceImplTest {
 
 	@BeforeEach
 	public void setUp() {
-		// With this call to initMocks we tell Mockito to process the annotations
 		MockitoAnnotations.initMocks(this);
 		newGameServiceImpl = new GameServiceImpl(randomGeneratorService);
 	}
