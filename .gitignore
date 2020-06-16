@@ -95,6 +95,10 @@ fabric.properties
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Project detail
+
+target/
+
 # Start of cra
 
 # dependencies
@@ -123,8 +127,6 @@ yarn-error.log*
 
 # Start of series
 
-/number-guess-boot
-/number-guess-v1
 /number-guess-v2
 /number-guess-v3
 /number-guess-v4
