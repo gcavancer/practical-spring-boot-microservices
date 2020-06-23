@@ -35,3 +35,14 @@ Run from IDE, or command line:
 ```bash
 $ java -jar number-guess-v2.jar
 ```
+
+## Endpoints
+
+GET:  http://localhost:8080/number-guess-service/app/service/game
+
+    Returns a new Game.
+
+POST: http://localhost:8080/number-guess-service/app/service
+
+    Header - Content-Type: application/json
+    Body - { "guesses":10 }
