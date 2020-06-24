@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <style>
+      .path9, .path10 {
+        animation: swim 5s 0s cubic-bezier(0.1, 0.2, 0.4, 1) infinite;
+      }
+
+      .path11, .path6, .path7, .path3 {
+        animation: swim 5s 0.1s cubic-bezier(0.1, 0.2, 0.4, 1) infinite;
+      }
+
+      .path12, .path4, .path8, .path1 {
+        animation: swim 5s 0.2s cubic-bezier(0.1, 0.2, 0.4, 1) infinite;
+      }
+
+      .path5, .path2 {
+        animation: swim 5s 0.3s cubic-bezier(0.1, 0.2, 0.4, 1) infinite;
+      }
+
+      .path17, .path13, .path14 {
+        animation: swim 5s 0.4s cubic-bezier(0.1, 0.2, 0.4, 1) infinite;
+      }
+
+      .path16, .path15 {
+        animation: swim 5s 0.5s cubic-bezier(0.1, 0.2, 0.4, 1) infinite;
+      }
+
+      @keyframes swim {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.9);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .footer {
+        position: relative;
+        margin-top: -150px;
+        height: 150px;
+        clear:both;
+        padding-top:20px;
+      } 
+    </style>
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div class="fixed-bottom">
+      <div class="text-center mt-3">
+        <p>
+          <a href="#" target="_blank">client-v3: Spring Boot Microservices</a>
+        </p>
+        <p>
+          <a href="https://currere.co" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="40" viewBox="0 0 1008.041 218.667">
+              <defs>
+                <clipPath id="a">
+                  <path d="M0 560h960V0H0z"></path>
+                </clipPath>
+              </defs>
+              <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 -114.333 452)">
+                <path d="M343.457 302.975c-4.84-1.26-9.412-3.396-13.715-6.276-6.156-4.26-10.907-9.542-14.253-15.78-3.348-6.24-5.02-12.974-5.02-20.173 0-13.376 4.675-24.338 14.029-32.405C333.85 220.27 346.385 216 362.103 216H370v15h-6.821c-10.997 0-19.798 2.853-26.4 8.162-6.604 5.308-9.905 12.44-9.905 21.2 0 8.816 3.285 16.123 9.86 21.432 6.573 5.308 15.388 8.206 26.445 8.206h6.82v15h-7.896c-7.59 0-13.805-.765-18.646-2.025" class="path22" fill="#6a6a6a"></path>
+                <path d="M444 253.71c0-6.958-1.955-12.627-5.988-17.005-4.035-4.38-9.217-6.568-15.611-6.568-6.336 0-11.359 2.189-15.452 6.568-4.094 4.378-5.949 10.047-5.949 17.006V305h-16v-48.41c0-12.837 3.356-23.005 10.11-30.502 6.753-7.5 15.797-11.247 27.152-11.247 11.414 0 20.647 3.748 27.43 11.247C456.474 233.585 460 243.753 460 256.59V305h-16z" class="path26" fill="#6a6a6a"></path>
+                <path d="M618.525 282.82c5.408 5.907 12.057 8.862 19.945 8.862 3.885 0 7.47-.75 10.758-2.25 3.228-1.473 6.14-3.647 8.734-6.509l-47.31-26.27a38.118 38.118 0 0 0-.24 4.256c0 8.697 2.703 16.001 8.113 21.91m38.725-45.26c-5.05-4.948-11.31-7.423-18.78-7.423-7.83 0-14.463 2.97-19.9 8.91a31.34 31.34 0 0 0-3.209 4.151l6.615 3.676 57.641 32.032c-4.363 8.997-10.057 15.85-17.078 20.56-7.022 4.708-14.985 7.063-23.889 7.063-5.977 0-11.67-1.14-17.078-3.419-5.408-2.28-10.234-5.609-14.477-9.988-4.244-4.44-7.484-9.418-9.726-14.936-2.24-5.519-3.362-11.338-3.362-17.456 0-8.339 1.942-15.986 5.827-22.944 3.884-6.96 9.353-12.598 16.404-16.916a41.982 41.982 0 0 1 10.713-4.634 43.05 43.05 0 0 1 11.52-1.575c11.413 0 21.095 3.658 29.044 10.977 7.948 7.32 13.028 17.277 15.24 29.873l-16.048 2.43c-1.254-8.639-4.407-15.432-9.457-20.38" class="path30" fill="#6a6a6a"></path>
+                <path d="M777.55 282.82c5.409 5.907 12.058 8.862 19.946 8.862 3.885 0 7.47-.75 10.758-2.25 3.285-1.5 6.244-3.72 8.875-6.658l-2.965-1.66-.04.011-44.425-24.67a38.249 38.249 0 0 0-.26 4.454c0 8.697 2.704 16.001 8.112 21.91m48.184-24.879c-1.256-8.639-4.41-15.432-9.457-20.38-5.051-4.949-11.311-7.424-18.782-7.424-7.828 0-14.463 2.97-19.9 8.91a31.451 31.451 0 0 0-3.122 4.02l59.12 33.027-.007.002 5.056 2.81c-4.363 8.997-10.055 15.85-17.076 20.56-7.024 4.708-14.987 7.063-23.891 7.063-5.977 0-11.668-1.14-17.076-3.419-5.41-2.28-10.235-5.609-14.48-9.988-4.243-4.44-7.483-9.418-9.723-14.936-2.242-5.519-3.364-11.338-3.364-17.456 0-8.339 1.942-15.986 5.829-22.944 3.882-6.96 9.35-12.598 16.404-16.916a41.922 41.922 0 0 1 10.713-4.634 43.025 43.025 0 0 1 11.517-1.575c11.414 0 21.096 3.658 29.045 10.977 7.948 7.32 13.028 17.277 15.24 29.873z" class="path34" fill="#6a6a6a"></path>
+                <path d="M583.625 306.376c-2.078.025-4.723.011-7.439-.126-8.81-.445-17.241-3.312-23.737-9.643C545.209 290.693 540 281.564 540 265.8V216h15v41.787c0 11.637 2.314 20.678 7.125 25.838 4.811 5.158 12.934 7.375 23.75 7.375h1.75l.076 5.292c.039-.007.104-.011.104-.011l.164 9.969.031.002v.014l-3.719.125c-.211 0-.447-.013-.656-.015" class="path38" fill="#6a6a6a"></path>
+                <path d="M520.625 306.376c-2.078.025-4.723.011-7.439-.126-8.81-.445-17.241-3.312-23.737-9.643C482.209 290.693 477 281.564 477 265.8V216h15v41.787c0 11.637 2.314 20.678 7.125 25.838 4.811 5.158 12.934 7.375 23.75 7.375h1.75l.076 5.292c.039-.007.104-.011.104-.011l.164 9.969.031.002v.014l-3.719.125c-.211 0-.447-.013-.656-.015" class="path42" fill="#6a6a6a"></path>
+                <path d="M743.625 306.376c-2.078.025-4.723.011-7.439-.126-8.81-.445-17.241-3.312-23.737-9.643C705.209 290.693 700 281.564 700 265.8V216h15v41.787c0 11.637 2.314 20.678 7.125 25.838 4.811 5.158 12.934 7.375 23.75 7.375h1.75l.076 5.292c.039-.007.104-.011.104-.011l.164 9.969.031.002v.014l-3.719.125c-.211 0-.447-.013-.656-.015" class="path46" fill="#6a6a6a"></path>
+              </g>
+              <path d="M124.333 217.333h64L157 161.833" class="path1" fill="#f8af00"></path>
+              <path d="M157 161.833l-62.417.042 29.75 55.458" class="path2" fill="#ffdb3f"></path>
+              <path d="M157 161.833l64.333.167-33 55.333" class="path3" fill="#58daf4"></path>
+              <path d="M123.333 106l67-.167-33.396-51.229" class="path4" fill="#ff8300"></path>
+              <path d="M156.937 54.604L92 54.667 123.333 106" class="path5" fill="#4ab7cd"></path>
+              <path d="M156.937 54.604l65.334-.104-31.938 51.333" class="path6" fill="#ffba45"></path>
+              <path d="M157 161.833l64.333.167-31-56.167" class="path7" fill="#00b6db"></path>
+              <path d="M190.333 105.833l-67 .167L157 161.833" class="path8" fill="#0084b9"></path>
+              <path d="M190.333 105.833l62.334-.388L221.333 162" class="path9" fill="#62f3ff"></path>
+              <path d="M190.333 105.833l62.334-.388L222.27 54.5" class="path10" fill="#ffda81"></path>
+              <path d="M156.937 54.604l65.334-.104L189.336 0" class="path11" fill="#ffda81"></path>
+              <path d="M127 0h62.336l-32.315 54.604" class="path12" fill="#006f9b"></path>
+              <path d="M112.333 108.401L50 108.556 81.321 160.5" class="path13" fill="#006f9b"></path>
+              <path d="M49.667 218.667h64l-31.334-55.5" class="path14" fill="#ffd573"></path>
+              <path d="M0 168.52l56.667.146-27.306-49.473" class="path15" fill="#df8b00"></path>
+              <path d="M7.604 55.937l65.333-.104L41 107.167" class="path16" fill="#4ab7cd"></path>
+              <path d="M59.5 1.13l65.39-.463-34.187 49.937" class="path17" fill="#52cce4"></path>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
