@@ -1,3 +1,5 @@
+import * as types from '../../constants/ActionTypes';
+
 const initialState = {
   average: '',
   deviation: '',
@@ -10,59 +12,56 @@ const initialState = {
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
-    case "RESTART_GAME":
+    case types.RESTART_GAME:
       return {
         ...state,
         average: "",
         deviation: "",
-        // OLD: original: Math.floor(Math.random() * 1000 + 1),
         original: '',
         guesses: 0,
         loading: true,
       };
-    case "RESTART_GAME_COMPLETED":
+    case types.RESTART_GAME_COMPLETED:
       return {
         ...state,
-        // OLD: average: action.payload,
         average: action.payload.average,
-        // ADD:
         original: action.payload.original,
         loading: false,
       };
-    case "VERIFY_GUESS":
+    case types.VERIFY_GUESS:
       return {
         ...state,
         deviation: state.original - action.payload,
         guesses: state.guesses + 1,
         win: Object.assign({}, { guesses: state.guesses + 1 }),
       };
-    case "VERIFY_GUESS_STARTED":
+    case types.VERIFY_GUESS_STARTED:
       return {
         ...state,
         loading: action.payload,
       };
-    case "VERIFY_GUESS_COMPLETED":
+    case types.VERIFY_GUESS_COMPLETED:
       return {
         ...state,
         loading: action.payload,
       };
-    case "REGISTER_WIN_STARTED":
+    case types.REGISTER_WIN:
       return {
         ...state,
         loading: true,
       };
-    case "REGISTER_WIN_COMPLETED":
+    case types.REGISTER_WIN_STARTED:
+      return {
+        ...state,
+        loading: true,
+      };
+    case types.REGISTER_WIN_COMPLETED:
       return {
         ...state,
         win: {},
         loading: false,
       };
-    case "REGISTER_WIN":
-      return {
-        ...state,
-        loading: true,
-      };
-    case "REQUEST_FAILED":
+    case types.REQUEST_FAILED:
       return {
         ...state,
         message: action.error,
