@@ -1,3 +1,4 @@
+import * as types from '../constants/ActionTypes';
 import { put, takeEvery, all, call, select, delay } from 'redux-saga/effects';
 import { apiGetAverageGuesses, apiWin } from '../api';
 import {
@@ -57,15 +58,15 @@ export function* restartGameSaga() {
 }
 
 function* restartGameWatcher() {
-  yield takeEvery('RESTART_GAME', restartGameSaga);
+  yield takeEvery(types.RESTART_GAME, restartGameSaga);
 }
 
 function* registerWinWatcher() {
-  yield takeEvery('REGISTER_WIN', registerWinSaga);
+  yield takeEvery(types.REGISTER_WIN, registerWinSaga);
 }
 
 function* verifyGuessWatcher() {
-  yield takeEvery('VERIFY_GUESS', verifyGuessSaga);
+  yield takeEvery(types.VERIFY_GUESS, verifyGuessSaga);
 }
 
 export default function* rootSaga() {
