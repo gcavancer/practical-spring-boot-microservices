@@ -1,4 +1,4 @@
-# number-guess-v3**
+# number-guess-v3
 
 Rethinking the Spring Boot game, from the Currere [article](https://currere.co/knowledge/practical-spring-boot-microservices-3-server-side-logic).
 
