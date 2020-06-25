@@ -10,7 +10,7 @@ Clone example:
 
 ```bash
 $ git clone https://github.com/gcavancer/practical-spring-boot-microservices
-$ cd number-guess-v2
+$ cd number-guess-v3
 ```
 
 ## Run Tests
@@ -24,7 +24,7 @@ $ mvn test
 
 ## Run
 
-Generate JAR to /target/number-guess-v2.jar:
+Generate JAR to /target/number-guess-v3.jar:
 
 ```bash
 $ mvn package
@@ -33,7 +33,7 @@ $ mvn package
 Run from IDE, or command line:
 
 ```bash
-$ java -jar number-guess-v2.jar
+$ java -jar number-guess-v3.jar
 ```
 
 ## Endpoints
