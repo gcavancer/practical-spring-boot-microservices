@@ -127,7 +127,6 @@ yarn-error.log*
 
 # Start of series
 
-/number-guess-v4
 /number-guess-v5
 /number-guess-v6
 /number-guess-v7
@@ -142,7 +141,6 @@ yarn-error.log*
 /service-registry-v7
 
 /ui/client-v1-tested
-/ui/client-v4
 /ui/client-v5
 /ui/client-v6
 
