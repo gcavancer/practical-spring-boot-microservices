@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/intellij
 # Edit at https://www.gitignore.io/?templates=intellij
 
@@ -127,11 +126,9 @@ yarn-error.log*
 
 # Start of series
 
-/number-guess-v5
 /number-guess-v6
 /number-guess-v7
 
-/award-v5
 /award-v6
 /award-v7
 
@@ -141,7 +138,6 @@ yarn-error.log*
 /service-registry-v7
 
 /ui/client-v1-tested
-/ui/client-v5
 /ui/client-v6
 
 # End of series
