@@ -25,8 +25,6 @@ function* registerAttemptSaga(action) {
     yield delay(2000);  // Needed to see win in view.
     if(deviation === 0) {
       yield put(restartGame());
-    } else {
-      // ?
     }
   } catch (e) {
     yield put(requestFailed('Error: ' + e.message));
@@ -55,16 +53,12 @@ function* getStatsSaga(action) {
     const len = data.length;
     const userId = data[0].user.id;
     // yield delay(1000);
-
     const data2 = yield call(apiGetMedals, userId);
-    
     yield put(getStatsCompleted(len, data2.data.medals, userId));
     // yield put(getStatsCompleted(len, userId));
   } catch (e) {
     yield put(requestFailed('Error: ' + e.message));
-  } finally {
-    // ?
-  }  
+  }
 }
 
 function* getLeaderBoardSaga() {
@@ -75,9 +69,7 @@ function* getLeaderBoardSaga() {
     yield put(getLeaderBoardCompleted(data));
   } catch (e) {
     yield put(requestFailed('Error: ' + e.message));
-  } finally {
-    // ?
-  }  
+  }
 }
 
 function* restartGameWatcher() {
