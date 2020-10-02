@@ -1,0 +1,31 @@
+server:
+  port: 8000
+
+zuul:
+  prefix: /api
+  routes:
+    service:
+      path: /service/**
+      url: http://localhost:8081/number-guess-service/app/service
+    results:
+      path: /results/**
+      url: http://localhost:8081/number-guess-service/app/results
+    leaders:
+      path: /leaders/**
+      url: http://localhost:8082/award-service/app/leaders
+    stats:
+      path: /stats/**
+      url: http://localhost:8082/award-service/app/stats
+
+  sensitiveHeaders:
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+
+ribbon:
+  eureka:
+    enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
