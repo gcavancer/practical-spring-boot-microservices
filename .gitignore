@@ -128,16 +128,20 @@ yarn-error.log*
 
 /number-guess-v6
 /number-guess-v7
+/number-guess-v8
 
 /award-v6
 /award-v7
+/award-v8
 
 /gateway-v6
 /gateway-v7
+/gateway-v8
 
 /service-registry-v7
 
 /ui/client-v1-tested
 /ui/client-v6
+/ui/client-v7
 
 # End of series

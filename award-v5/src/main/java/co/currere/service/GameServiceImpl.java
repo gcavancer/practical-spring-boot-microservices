@@ -109,7 +109,7 @@ class GameServiceImpl implements GameService {
 			score = optionalScore.get();
 		}
 		List<MedalCard> medalCards = medalCardRepository
-				.findByUserIdOrderByMedalTimestampDesc(userId);
+				.findDistinctTopByUserIdOrderByMedalTimestampDesc(userId);
 		return new GameStats(userId, score, medalCards.stream()
 				.map(MedalCard::getMedal).collect(Collectors.toList()));
 	}

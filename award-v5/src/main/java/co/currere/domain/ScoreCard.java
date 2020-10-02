@@ -34,7 +34,6 @@ public final class ScoreCard {
     @Column(name = "NO_OF_GUESSES")
     private final int noOfGuesses;
 
-    // Empty constructor for JSON / JPA
     public ScoreCard() {
         this(null, null, null, 0, 0);
     }
