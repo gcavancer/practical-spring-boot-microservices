@@ -17,7 +17,7 @@ class EventHandler {
     }
 
     @RabbitListener(queues = "${game.queue}")
-    void handleMultiplicationSolved(final GameWonEvent event) {
+    void handleGameWon(final GameWonEvent event) {
         log.info("Game Won Event received: {}", event.getAttemptId());
         try {
             gameService.newAttemptForUser(event.getUserId(),
