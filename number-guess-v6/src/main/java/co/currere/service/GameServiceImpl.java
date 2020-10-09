@@ -56,7 +56,8 @@ public class GameServiceImpl implements GameService {
 			attemptRepository.save(checkedAttempt);
 			eventDispatcher.send(
 					new GameWonEvent(checkedAttempt.getId(),
-							checkedAttempt.getUser().getId())
+							checkedAttempt.getUser().getId(),
+							checkedAttempt.getGuesses())
 			);
 		}
 

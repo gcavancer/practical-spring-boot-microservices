@@ -15,4 +15,5 @@ public class GameWonEvent implements Serializable {
 
 	private final Long attemptId;
 	private final Long userId;
+	private final int guesses;
 }
