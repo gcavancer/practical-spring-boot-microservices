@@ -135,9 +135,10 @@ yarn-error.log*
 /gateway-v7
 /gateway-v8
 
-/service-registry-v7
+/service-registry-v8
 
 /ui/client-v1-tested
 /ui/client-v7
+/ui/client-v8
 
 # End of series
