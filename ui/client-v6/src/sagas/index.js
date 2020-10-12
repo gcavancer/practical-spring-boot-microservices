@@ -55,7 +55,6 @@ function* getStatsSaga(action) {
     // yield delay(1000);
     const data2 = yield call(apiGetMedals, userId);
     yield put(getStatsCompleted(len, data2.data.medals, userId));
-    // yield put(getStatsCompleted(len, userId));
   } catch (e) {
     yield put(requestFailed('Error: ' + e.message));
   }
