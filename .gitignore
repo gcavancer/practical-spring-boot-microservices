@@ -126,19 +126,15 @@ yarn-error.log*
 
 # Start of series
 
-/number-guess-v7
 /number-guess-v8
 
-/award-v7
 /award-v8
 
-/gateway-v7
 /gateway-v8
 
 /service-registry-v8
 
 /ui/client-v1-tested
-/ui/client-v7
 /ui/client-v8
 
 # End of series

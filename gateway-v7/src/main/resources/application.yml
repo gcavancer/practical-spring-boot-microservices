@@ -1,0 +1,47 @@
+server:
+  port: 8000
+
+#spring:
+#  application:
+#    name: gateway
+#  cloud:
+#    gateway:
+#      default-filters:
+#        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+#      globalcors:
+#        corsConfigurations:
+#          '[/**]':
+#            allowedOrigins: "*"
+#            allowedMethods: "*"
+#            allowedHeaders: "*"
+#      routes:
+#        - id: game
+#          predicates:
+#            - Path=/api/service/game
+#          filters:
+#            - RewritePath=/api/service/game, /number-guess-service/app/service/game
+#          uri: http://localhost:8081
+#        - id: results
+#          predicates:
+#            - Path=/api/results/**
+#          filters:
+#            - RewritePath=/api/results, /number-guess-service/app/results
+#          uri: http://localhost:8081
+#        - id: leaders
+#          predicates:
+#            - Path=/api/leaders
+#          filters:
+#            - RewritePath=/api/leaders, /award-service/app/leaders
+#          uri: http://localhost:8082
+#        - id: stats
+#          predicates:
+#            - Path=/api/stats**
+#          filters:
+#            - RewritePath=/api/stats, /award-service/app/stats
+#          uri: http://localhost:8082
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
